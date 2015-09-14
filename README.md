@@ -152,6 +152,16 @@ func returnMulti2() (n int, s string) {
 }
 var x, str = returnMulti2()
 
+// Set function Scale on a type Vertex
+type Vertex struct {
+	X, Y float64
+}
+
+func (v *Vertex) Scale(f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
+}
+
 ```
 
 ### Functions As Values And Closures
